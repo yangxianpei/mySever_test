@@ -7,6 +7,7 @@ const BASE_URL = window.location.hostname === 'localhost'
 function App() {
     const [list,setList] =useState([])
     useEffect(()=>{
+        console.log('BASE_URL',BASE_URL);
         fetch(`${BASE_URL}/api/list`)
          .then((response)=>response.json()).then(res=>{
             console.log(res);
