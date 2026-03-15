@@ -1,6 +1,6 @@
 # Dockerfile
 FROM nginx:alpine
-RUN npm build
+RUN npm run build
 COPY ./build /usr/share/nginx/html
 # 可选：自定义 Nginx 配置
 
